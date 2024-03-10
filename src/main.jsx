@@ -4,7 +4,7 @@ import "@fontsource-variable/onest";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout/Layout'
 import './index.css'
-import Home from './pages/Home'
+import Home, { loader as loaderClientes } from './pages/Home'
 import NewCustomer from './pages/NewCustomer'
 
 const router = createBrowserRouter([
@@ -14,7 +14,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
+        loader: loaderClientes
       },
       {
         path: '/nuevo-cliente',

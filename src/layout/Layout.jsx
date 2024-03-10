@@ -9,7 +9,7 @@ const Layout = () => {
       <aside className='md:w-1/4 bg-blue-900 px-5 py-10'>
         <h2 className='text-4xl font-black text-center text-white'>CRM - Clientes</h2>
 
-        <nav className='mt-10'>
+        <nav className='mt-10 flex flex-col items-center'>
           <Link
             className={`text-xl mt-2 hover:text-blue-400 ${location.pathname === '/' ? 'text-blue-400' : 'text-white'}`}
             to="/"
