@@ -4,8 +4,8 @@ import "@fontsource-variable/onest";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout/Layout'
 import './index.css'
-import Home, { loader as loaderClientes } from './pages/Home'
-import NewCustomer from './pages/NewCustomer'
+import Home, { loader as loaderCustomers } from './pages/Home'
+import NewCustomer, { action as actionNewCustomer } from './pages/NewCustomer'
 
 const router = createBrowserRouter([
   {
@@ -15,11 +15,12 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: loaderClientes
+        loader: loaderCustomers
       },
       {
         path: '/nuevo-cliente',
-        element: <NewCustomer />
+        element: <NewCustomer />,
+        action: actionNewCustomer
       }
     ]
   }

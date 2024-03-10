@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <>
       <h1 className="font-black text-4xl text-blue-900">Clientes</h1>
-      <a className="mt-3">Administra tus clientes</a>
+      <p className="mt-2">Administra tus clientes</p>
 
       { clientes.length ? (
         <table className="w-full bg-white shadow mt-5 table-auto">
