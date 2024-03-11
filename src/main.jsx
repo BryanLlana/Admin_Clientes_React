@@ -7,6 +7,7 @@ import './index.css'
 import Home, { loader as loaderCustomers } from './pages/Home'
 import NewCustomer, { action as actionNewCustomer } from './pages/NewCustomer'
 import EditCustomer, { action as actionEditCustomer, loader as loaderEditCustomer } from './pages/EditCustomer';
+import { action as actionDeleteCustomer } from './components/Customer';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         element: <EditCustomer />,
         loader: loaderEditCustomer,
         action: actionEditCustomer
+      },
+      {
+        path: '/eliminar-cliente/:id',
+        action: actionDeleteCustomer
       }
     ]
   }

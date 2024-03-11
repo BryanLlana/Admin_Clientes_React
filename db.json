@@ -27,21 +27,6 @@
       "phone": 319381983,
       "email": "miguel@juan.com",
       "company": "Codigo Con Juan"
-    },
-    {
-      "id": "5",
-      "name": "Pedro",
-      "phone": 1398198938,
-      "email": "pedro@juan.com",
-      "company": "Codigo Con Juan"
-    },
-    {
-      "name": "Bryan Tito",
-      "company": "DevTalles",
-      "email": "bryanllana14@gmail.com",
-      "phone": "933192756",
-      "notes": "El cliente desea algo importante",
-      "id": "7e34"
     }
   ]
 }
