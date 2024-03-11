@@ -6,6 +6,7 @@ import Layout from './layout/Layout'
 import './index.css'
 import Home, { loader as loaderCustomers } from './pages/Home'
 import NewCustomer, { action as actionNewCustomer } from './pages/NewCustomer'
+import EditCustomer, { action as actionEditCustomer, loader as loaderEditCustomer } from './pages/EditCustomer';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
         path: '/nuevo-cliente',
         element: <NewCustomer />,
         action: actionNewCustomer
+      },
+      {
+        path: '/editar-cliente/:id',
+        element: <EditCustomer />,
+        loader: loaderEditCustomer,
+        action: actionEditCustomer
       }
     ]
   }
